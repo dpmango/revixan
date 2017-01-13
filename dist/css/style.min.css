@@ -3184,6 +3184,16 @@ body, html {
     display: inline-block;
     content: ' ';
 }
+.form-control.has-error {
+    border: 2px solid #ff3f3f;
+    -webkit-box-shadow: 0 2px 8px rgba(255, 63, 63, 0.1);
+            box-shadow: 0 2px 8px rgba(255, 63, 63, 0.1);
+}
+.contact__form__success {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
 /* Bootstrap overwrites */
 .btn-danger {
     padding: 10px 25px;
@@ -4658,6 +4668,13 @@ p.pt10 {
 .heading--green::after {
     right: -5px;
 }
+.help-block {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background: rgba(255, 63, 63, 0.1);
+    color: tomato;
+    font-size: 12px;
+}
 /* CTA */
 .cta {
     margin-top: 30px;
@@ -5219,7 +5236,7 @@ img.mfp-img {
     }
 }
 
-#callBack, #getPhone {
+#callBack, #getPhone, #downloadCase {
     position: relative;
     margin: 40px auto;
     padding: 30px 25px;
@@ -5230,16 +5247,29 @@ img.mfp-img {
     text-align: left;
 }
 
-#callBack p, #getPhone p {
+#callBack p, #getPhone p, #downloadCase p {
     font-size: 12px;
 }
 
-#callBack form, #getPhone form {
+#callBack form, #getPhone form, #downloadCase form {
     margin-top: 40px;
 }
 
-#callBack .form-control, #getPhone .form-control {
+#callBack .form-control, #getPhone .form-control, #downloadCase .form-control {
     margin-bottom: 10px;
+}
+
+#callBack {
+    max-width: 800px;
+}
+
+#callBack p {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+#callBack img {
+    margin-top: 20px;
 }
 
 .my-mfp-zoom-in .zoom-anim-dialog {

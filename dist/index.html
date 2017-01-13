@@ -4,7 +4,7 @@
     <!-- MADE WITH LOVE BY <> SERGEY KHMELEVSKOY </>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Site name</title>
+    <title>Revixan</title>
     <script src="js/main.min.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
 <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -161,7 +161,7 @@
           <div class="col-sm-7">
             <div class="case">
               <div class="case__heading">Инвестиции в покупку <span>REVIXAN DUO LIGHT</span> начинают <span>приносить прибыль</span> уже на 4 месяце!</div>
-              <div class="text-sm-right"><a class="popup-with-move-anim btn btn-danger" href="#callBack">Скачать кейс</a></div>
+              <div class="text-sm-right"><a class="popup-with-move-anim btn btn-danger" href="#downloadCase">Скачать кейс</a></div>
             </div>
           </div>
         </div>
@@ -767,18 +767,18 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="cta__wrapper">
-              <form class="row" action="">
+              <form class="row" id="ctaForm" action="">
                 <div class="col-md-12 col-lg-3">
                   <h3>Остались вопросы?</h3>
                   <p class="mt10">Оставьте контакты и мы с <br> Вами свяжемся</p>
                 </div>
                 <div class="col-md-4 col-lg-3">
-                  <input class="form-control" type="text" placeholder="Фамилия, Имя, Отчество">
-                  <input class="form-control mt10" type="text" placeholder="Номер телефона">
+                  <input class="form-control" type="text" name="name" placeholder="Фамилия, Имя, Отчество">
+                  <input class="form-control mt10" type="text" name="phone" placeholder="Номер телефона">
                 </div>
                 <div class="col-md-4 col-lg-3">
-                  <input class="form-control" type="text" placeholder="Электронная почта">
-                  <input class="form-control mt10" type="text" placeholder="Город">
+                  <input class="form-control" type="text" name="email" placeholder="Электронная почта">
+                  <input class="form-control mt10" type="text" name="city" placeholder="Город">
                 </div>
                 <div class="col-md-4 col-lg-3"><a class="btn btn-danger btn-lg btn-block mt20" href="#">ОТПРАВИТЬ</a></div>
               </form>
@@ -806,31 +806,94 @@
     </footer>
     <!--FOOTER::END-->
   </body>
-</html>
-<div class="zoom-anim-dialog mfp-hide" id="callBack">
-  <div class="row">
-    <div class="col-md-6">
-      <h2>Программа</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dortt eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><img class="img-fluid img-shadow" src="images/map.png">
-    </div>
-    <div class="col-md-6">
-      <form action="">
-        <input class="form-control form-control--modal" type="text" placeholder="Имя">
-        <input class="form-control form-control--modal" type="email" placeholder="Email">
-        <input class="form-control form-control--modal" type="email" placeholder="Телефон">
-        <textarea class="form-control form-control--modal" placeholder="Вопросы"></textarea>
-        <button class="btn btn-danger btn-block" type="submit">Оставить заявку</button>
-      </form>
+  <div class="zoom-anim-dialog mfp-hide" id="callBack">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Программа</h2>
+        <p>Уважаемые коллеги, врачи дерматовенерологи и дерматокосметологи!</p>
+        <p>Приглашаем вас на знакомство с REVIXAN DUO LIGHT и REVIXAN BEAUTY.</p>
+        <p>REVIXAN DUO LIGHT и REVIXAN BEAUTY – комплекс специализированного оборудования, препаратов и технологий для терапии широкого спектра заболеваний в дерматокосметологии, борьбы с возрастными изменениями кожи, а также помощь в восстановлении состояния кожи после применения пластической хирургии и других инвазивных процедур методом фотодинамической терапии.</p>
+        <!-- ul ПРОГРАММА МАСТЕР-КЛАССА REVIXAN-BEAUTY:
+        li
+          span Технология REVIXAN BEAUTY в Фотодинамической Косметологии.
+        li
+          span Области применения в дерматокосметологии, целевые аудитории, ожидаемый эффект.
+        li
+          span Проведение косметологической процедуры, мастер-класс по применению.
+        li
+          span Совместимость и синергии с другими процедурами аппаратной косметологии. Примеры комплексных косметологических программ для пациентов на базе комбинирования Ревиксан и процедур аппаратной и инъекционной косметологии.
+        li
+          span Клиническая практика по применению Ревиксан для лечения псориаза, керратозов, акне, онихомикоза и других заболеваний.
+        li
+          span Ценообразование, расход, маржинальность процедуры, окупаемость оборудования и общая экономика по использованию Ревиксан.
+        li
+          span Ответы на вопросы по применению Ревиксан в различных нозологиях (можно задать заранее при заполнении заявки на участие, можно непосредственно на мастер-классе).
+        
+        -->
+        <p><b>Мастер-класс проводят:</b></p>
+        <p>Диана Лазова, <br> Руководитель центра аппаратной косметологии и эстетической медицины «Элосмед», врач-дерматокосметолог и физиотерапевт.</p>
+        <p>Проф. Дубенский В.В. <br> Заслуженный врач РФ, доктор медицинских наук, зав. Кафедрой Дерматовенерологии, Интернатуры и Ординатуры Тверского Государственного Медицинского Университета.</p>
+        <p><br> <b>Дата:</b> 24.01.2016</p>
+        <p><br> <b>Место:</b> г. Москва, центр (уточняется и будет сообщено за несколько дней до мастер-класса).</p>
+      </div>
+      <div class="col-md-6">
+        <form id="callBackForm" action="">
+          <input class="form-control form-control--modal" type="text" name="name" placeholder="Имя">
+          <input class="form-control form-control--modal" type="email" name="email" placeholder="Email">
+          <input class="form-control form-control--modal" type="text" name="phone" placeholder="Телефон">
+          <textarea class="form-control form-control--modal" placeholder="Вопросы" name="message"></textarea>
+          <button class="btn btn-danger btn-block" type="submit">Оставить заявку</button>
+        </form><img class="img-fluid img-shadow" src="images/map.png">
+      </div>
     </div>
   </div>
-</div>
-<div class="zoom-anim-dialog mfp-hide text-xs-center" id="getPhone">
-  <h2>Оставьте заявку на обратный звонок</h2>
-  <p>Мы перезвоним вам в ближайшее время</p>
-  <form action="">
-    <input class="form-control form-control--modal" type="text" placeholder="Имя">
-    <input class="form-control form-control--modal" type="email" placeholder="Email">
-    <input class="form-control form-control--modal" type="email" placeholder="Телефон">
-    <button class="btn btn-danger btn-block" type="submit">Перезвоните мне</button>
-  </form>
-</div>
+  <div class="zoom-anim-dialog mfp-hide text-xs-center" id="getPhone">
+    <h2>Оставьте заявку на обратный звонок</h2>
+    <p>Мы перезвоним вам в ближайшее время</p>
+    <form id="getPhoneForm" action="">
+      <input class="form-control form-control--modal" type="text" name="name" placeholder="Имя">
+      <input class="form-control form-control--modal" type="email" name="email" placeholder="Email">
+      <input class="form-control form-control--modal" type="email" name="phone" placeholder="Телефон">
+      <button class="btn btn-danger btn-block" type="submit">Перезвоните мне</button>
+    </form>
+  </div>
+  <div class="zoom-anim-dialog mfp-hide text-xs-center" id="downloadCase">
+    <h2>Скачать КЕЙС</h2>
+    <p>Мы отправим вам кейс реальной работы REXIXAN на адрес электронной почты</p>
+    <form id="downloadCaseForm" action="">
+      <input class="form-control form-control--modal" type="text" name="name" placeholder="Имя">
+      <input class="form-control form-control--modal" type="email" name="email" placeholder="Email">
+      <input class="form-control form-control--modal" type="email" name="phone" placeholder="Телефон">
+      <button class="btn btn-danger btn-block" type="submit">Получить кейс</button>
+    </form>
+  </div>
+  <!-- Yandex.Metrika counter-->
+  <script type="text/javascript">
+    (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+    try {
+    w.yaCounter42097559 = new Ya.Metrika({
+    id:42097559,
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    webvisor:true
+    });
+    } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/42097559" style="position:absolute; left:-9999px" alt=""></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter-->
+</html>
