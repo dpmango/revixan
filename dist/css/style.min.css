@@ -4558,6 +4558,9 @@ p.pt10 {
 .testinmonials {
     margin-top: 40px;
 }
+.testinmonials__cut {
+    display: none;
+}
 .testinmonials__card {
     margin-top: 20px;
     padding: 20px;
