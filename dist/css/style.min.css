@@ -3212,6 +3212,9 @@ body, html {
 .btn-block {
     display: block;
 }
+.btn-width {
+    min-width: 180px;
+}
 /* HEADER */
 .ico-logo {
     position: absolute;
@@ -3369,6 +3372,7 @@ body, html {
     height: 80px;
     background-position: top center;
     background-size: contain;
+    cursor: pointer;
 }
 .floating .top-menu-list {
     margin-top: -5px;
@@ -3722,6 +3726,7 @@ p.pt10 {
 .experts .fix {
     -webkit-flex-shrink: 1;
             flex-shrink: 1;
+    overflow-x: hidden;
     overflow-y: hidden;
     max-width: 100%;
         -ms-flex-negative: 1;
@@ -5251,11 +5256,16 @@ img.mfp-img {
 }
 
 #callBack p, #getPhone p, #downloadCase p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #callBack form, #getPhone form, #downloadCase form {
     margin-top: 40px;
+}
+
+#callBack ul, #getPhone ul, #downloadCase ul {
+    margin-left: 0;
+    padding-left: 17px;
 }
 
 #callBack .form-control, #getPhone .form-control, #downloadCase .form-control {
