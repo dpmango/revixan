@@ -3838,6 +3838,9 @@ p.pt10 {
 .product {
     margin-top: 50px;
 }
+.product .white {
+    background: white;
+}
 .product__wrapper {
     position: relative;
     padding: 30px 30px 50px 30px;
@@ -3872,9 +3875,18 @@ p.pt10 {
 }
 .product__counter {}
 .product__counter__left {
-    margin-top: 35px;
+    margin-left: -7px;
     padding: 20px;
-    background: white;
+    min-height: 172px;
+    background: white;/* margin-top: 35px */
+}
+@media(max-width: 992px) {
+    .product__counter__left {
+        margin-top: 30px;
+        margin-right: 15px;
+        margin-left: 0;
+        min-height: auto;
+    }
 }
 .product__counter__head {
     color: #00b7e3;
@@ -3905,9 +3917,13 @@ p.pt10 {
             transform: rotate(-5deg);
 }
 .product__counter__right {
-    margin-top: 10px;
     padding: 20px;
-    background: white;
+    background: white;/* margin-top: 10px */
+}
+@media(max-width: 992px) {
+    .product__counter__right {
+        margin-left: 15px;
+    }
 }
 .product__counter__right__head {
     padding: 10px 10px;
